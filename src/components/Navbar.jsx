@@ -8,9 +8,10 @@ const Navbar = ()  => {
 
       <div className="w-full flex justify-between items-center">
         <div className="">
-            <a href="#" className="text-xl">
+            <NavLink to={"/"} className="text-xl">
             <img src="https://rkbattle.com/Images/LandingPage_img/logo.png" className=" w-10" alt="" />
-            </a>
+            <h1>LOGO</h1>
+            </NavLink>
         </div>
        
         <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
@@ -32,9 +33,9 @@ const Navbar = ()  => {
                 </a>
               </li>
               <li>
-                <a className="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">
+                <NavLink to={"/contact"} className="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">
                   Contact Us
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>
@@ -46,8 +47,8 @@ const Navbar = ()  => {
                             <button onClick={(e) => localStorage.clear()} className="bg-rose-500 text-white py-2 px-5 font-semibold rounded-3xl">Logout</button>
                         ) : (
                           <div className="flex justify-center items-center gap-2">
-                            <button className="bg-black text-white py-2 px-5 font-semibold rounded-3xl">Sign in</button>
-                            <NavLink to={"/signin"} className="bg-white border  text-black py-2 px-5 font-semibold rounded-3xl">Sign up</NavLink>
+                            <NavLink to={"/signin"} className="bg-black text-white py-2 px-5 font-semibold rounded-3xl">Sign in</NavLink>
+                            <NavLink to={"/signup"} className="bg-white border  text-black py-2 px-5 font-semibold rounded-3xl">Sign up</NavLink>
                             </div>)
                     }
                 
@@ -57,7 +58,7 @@ const Navbar = ()  => {
           </div>
           
       </header>
-      <Header/>
+      {/* <Header/> */}
 
       </>
     )
