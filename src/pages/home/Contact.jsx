@@ -29,8 +29,8 @@ function Contact() {
             <div className='mb-3'>
                <textarea type="text" className='w-full py-3 px-4 border outline-none rounded-xl'  placeholder='Type your message..' />
             </div>
-            <div className='mb-3'>
-                <Button style={{backgroundColor: "white", color: 'black'}} onClick={submitContact}>
+            <div className='mb-3 flex justify-start items-center'>
+                <Button style={{backgroundColor: "black", color: 'white', borderRadius: "40px",}} onClick={submitContact}>
                     Submit
                 </Button>
                
