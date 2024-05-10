@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../../components/Button'
 import Category from './Category'
+import Product from './Product'
 
 function Dashboard() {
   document.title = "Dashboard"
@@ -31,27 +32,7 @@ return (
 
  <Category/>
 
- <div className='px-5 mt-10'>
-    <h1 className='text-2xl font-bold text-[#064d4f]'>You Might Need</h1>
-
-    <div className='mt-10'>
-
-      <div className='w-48 h-[320px] bg-white rounded-xl'>
-          <div className='p-4'>
-            <img src="https://pngfre.com/wp-content/uploads/Beet-9.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} mb-3" alt=""/>
-            <p className='text-sm text-center font-semibold text-[#064d4f] mb-1'>Beetroot (Chukandar)</p>
-            <p className='text-center text-sm font-semibold text-gray-500 mb-3'>500 gm.</p>
-            <p className='text-center text-xl font-extrabold text-[#064d4f]'>₹ 17.
-             <text class="text-sm text-[#064d4f]">99</text>
-            </p>
-            <div className='py-1 bg-[#f1f4eb] text-center mt-3  rounded-lg'>
-                <button className='text-[#064d4f] text-3xl text-center'>+</button>                
-            </div>
-          </div>
-      </div>
-
-    </div>
- </div>
+<Product/>
  </>
 )
 }

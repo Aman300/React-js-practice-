@@ -36,7 +36,7 @@ function Category() {
   ];
 
   return (
-    <div className='mt-10 px-5 flex justify-between gap-4'>
+    <div className='mt-10 px-5 grid grid-cols-5 gap-4'>
       {categories.map(category => (
         <CategoryCard key={category.id} data={category} />
       ))}

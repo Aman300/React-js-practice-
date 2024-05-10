@@ -127,7 +127,7 @@ const Navbar = ()  => {
                 </svg>
                 <p className="text-sm text-white hidden lg:block md:block">
                   Order now and get it within
-                  <span className="text-yellow-300">15 mint!</span>
+                  <span className="text-yellow-300"> 15 mint!</span>
                 </p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

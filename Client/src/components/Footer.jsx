@@ -3,18 +3,18 @@ import { Link, NavLink } from "react-router-dom";
 const Footer = ()  => {
     return (
       <>
-      <div className="mt-8 bg-black pt-9">
+      <div className="mt-8 bg-[#fdf9ed] pt-9">
         <div className="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
             <div className="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
             <div className="md:w-[316px]">
-                <p className="text-[18px] font-medium text-white"></p>
-                <h1 className="text-white font-extrabold">
+                <p className="text-[18px] font-medium "></p>
+                <h1 className=" font-extrabold">
                 <a href="#" className="text-xl">
                 <img src="https://rkbattle.com/Images/LandingPage_img/logo.png" className=" w-10" alt="" />
                 </a>
                 </h1>
                 <p />
-                <p className="mt-[18px] text-[15px] font-normal text-white/[80%]">
+                <p className="mt-[18px] text-[15px] font-normal /[80%]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, fugit
                 non. Incidunt dolorum adipisci, tempore asperiores nemo odio facere
                 officiis enim animi placeat eaque nesciunt alias beatae id, at dicta.
@@ -105,11 +105,11 @@ const Footer = ()  => {
                 <div className="ml-[18px]">
                     <a
                     href="tel:+911800123444"
-                    className="font-Inter text-[14px] font-medium text-white"
+                    className="font-Inter text-[14px] font-medium "
                     >
                     +91 1800123444
                     </a>
-                    <p className="font-Inter text-[12px] font-medium text-white">
+                    <p className="font-Inter text-[12px] font-medium ">
                     Support Number
                     </p>
                 </div>
@@ -132,11 +132,11 @@ const Footer = ()  => {
                 <div className="ml-[18px]">
                     <a
                     href="mailto:help@lorem.com"
-                    className="font-Inter text-[14px] font-medium text-[#fff]"
+                    className="font-Inter text-[14px] font-medium "
                     >
                     help@lorem.com
                     </a>
-                    <p className="font-Inter text-[12px] font-medium text-[#fff]">
+                    <p className="font-Inter text-[12px] font-medium ">
                     Support Email
                     </p>
                 </div>
@@ -159,17 +159,17 @@ const Footer = ()  => {
                 <div className="ml-[18px]">
                     <a
                     href="mailto:help@lorem.com"
-                    className="font-Inter text-[14px] font-medium text-[#fff]"
+                    className="font-Inter text-[14px] font-medium "
                     >
                     Sub Nerul, Mumbia, India, 123456
                     </a>
-                    <p className="font-Inter text-[12px] font-medium text-white">
+                    <p className="font-Inter text-[12px] font-medium ">
                     Address
                     </p>
                 </div>
                 </div>
             </div>
-            <div className="mt-6 flex w-full flex-col justify-between text-white sm:flex-row md:mt-0 md:max-w-[341px]">
+            <div className="mt-6 flex w-full flex-col justify-between  sm:flex-row md:mt-0 md:max-w-[341px]">
                 <div className="">
                 <p className="text-deutziawhite font-inter text-[18px] font-medium leading-normal">
                     Pages
@@ -258,9 +258,9 @@ const Footer = ()  => {
                 </div>
             </div>
             </div>
-            <hr className="mt-[30px] text-white" />
+            <hr className="mt-[30px] " />
             <div className="flex items-center justify-center pb-8 pt-[9px] md:py-8">
-            <p className="text-[10px] font-normal text-white md:text-[12px]">
+            <p className="text-[10px] font-normal  md:text-[12px]">
                 © Copyright
                 {/* */}2024
                 {/* */}, All Rights Reserved by YOUR WEBSITES. PVT. LTD
