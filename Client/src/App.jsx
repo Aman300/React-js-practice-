@@ -3,7 +3,6 @@ import Signin from "./pages/auth/Signin";
 import { Routes, Route, BrowserRouter, Outlet } from 'react-router-dom';
 import Signup from "./pages/auth/Signup";
 import Footer from "./components/Footer";
-import Contact from "./pages/home/Contact";
 import Dashboard from "./pages/home/Dashboard";
 
 export default function App() {
@@ -30,7 +29,6 @@ export default function App() {
             }
           >
             <Route path="/" element={<Dashboard />} />
-            <Route path="/contact" element={<Contact />} />
             
           </Route>
         </Route>

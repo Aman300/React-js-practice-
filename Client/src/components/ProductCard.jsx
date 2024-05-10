@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function ProductCard( product) {
+  const [count, setCount] = useState(0)
+
   return (
     <div class='w-[200px] h-[320px] bg-white rounded-xl bottom-rounded-card'>
     <div class='p-4'>
@@ -12,9 +14,29 @@ function ProductCard( product) {
         <p class='text-center text-xl font-extrabold text-current'>₹ {product.data.price}.
         <span class="text-sm text-current">99</span>
         </p>
-        <div class='py-1 bg-[#f1f4eb] text-center mt-3 rounded-lg'>
-            <button class='text-current text-3xl text-center'>+</button>                
-        </div>
+        {
+          count === 0 ? ( <div class='py-1 bg-[#f1f4eb] text-center mt-3 rounded-lg'>
+          <button class='text-current text-3xl text-center'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6" onClick={(e) => setCount(count + 1)}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+        </button>                
+      </div> ) : (<div class='py-1 bg-lightGreen text-center mt-3 rounded-lg flex justify-evenly items-center'>
+            <button id="minusBtn" class='text-current text-3xl text-center mr-2'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6" onClick={(e) => setCount(count - 1)}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+            </button>
+            <span id="count" class="text-xl text-current">{count}</span>
+            <button id="plusBtn" class='text-current text-3xl text-center ml-2'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6" onClick={(e) => setCount(count + 1)}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+            </button>                
+        </div>)
+        }
+        
+        
+
     </div>
 </div>
   );

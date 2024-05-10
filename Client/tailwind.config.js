@@ -19,7 +19,8 @@ export default {
       'green': '#78dcca',
       'yellow': '#fcc041',
       'gray': "#92979d",
-      'rose': "#ab4725"
+      'rose': "#ab4725",
+      'lightGreen':"#bbea70"
     },
     fontWeight: {
       thin: '100',
