@@ -15,7 +15,7 @@ function ProductCard( product) {
         <span class="text-sm text-current">99</span>
         </p>
         {
-          count === 0 ? ( <div class='py-1 bg-[#f1f4eb] text-center mt-3 rounded-lg'>
+          count === 0 ? ( <div class='py-1 bg-[#f1f4eb] text-center mt-3 rounded-lg flex justify-center items-center'>
           <button class='text-current text-3xl text-center'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6" onClick={(e) => setCount(count + 1)}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
         </svg>

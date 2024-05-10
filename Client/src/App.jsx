@@ -4,6 +4,7 @@ import { Routes, Route, BrowserRouter, Outlet } from 'react-router-dom';
 import Signup from "./pages/auth/Signup";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/home/Dashboard";
+import CategoryDetails from "./pages/home/CategoryDetails";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
             }
           >
             <Route path="/" element={<Dashboard />} />
+            <Route path="/category-details" element={<CategoryDetails />} />
             
           </Route>
         </Route>
