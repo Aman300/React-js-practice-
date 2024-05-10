@@ -9,9 +9,11 @@ const Footer = ()  => {
             <div className="md:w-[316px]">
                 <p className="text-[18px] font-medium "></p>
                 <h1 className=" font-extrabold">
-                <a href="#" className="text-xl">
-                <img src="https://rkbattle.com/Images/LandingPage_img/logo.png" className=" w-10" alt="" />
-                </a>
+                <div className=" flex justify-start items-center gap-1">
+                  <img className="w-6" src="https://www.svgrepo.com/show/149992/orange.svg" alt="" />
+                   <p className=" font-semibold text-current ">Gromuse</p>
+                </div>
+               
                 </h1>
                 <p />
                 <p className="mt-[18px] text-[15px] font-normal /[80%]">

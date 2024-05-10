@@ -59,8 +59,8 @@ function Product() {
    
      <div className='px-5 mt-10'>
         <div className='flex justify-between'>
-            <h1 className='text-2xl font-bold text-[#064d4f]'>You Might Need</h1>
-            <NavLink className="text-rose-700 font-semibold flex justify-between gap-2">See more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <h1 className='text-2xl font-bold text-current'>You Might Need</h1>
+            <NavLink className="text-rose font-semibold flex justify-between gap-2">See more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
             </svg>
             </NavLink>

@@ -73,7 +73,7 @@ const Navbar = ()  => {
 
       <div className="grid xl:grid-cols-1 grid-cols-1">
         <div className="p-5">
-          <div className="py-3 px-3 rounded-xl border w-full bg-[#064d4f]">
+          <div className="py-3 px-3 rounded-xl border w-full bg-current">
             <div className="flex justify-between items-center">
               <div className="flex justify-items-center items-center gap-3 lg:px-10">
                 <svg
@@ -90,7 +90,10 @@ const Navbar = ()  => {
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
                   />
                 </svg>
-                <p className=" font-semibold text-white">LOGO</p>
+                <div className=" flex justify-between items-center gap-1">
+                  <img className="w-6" src="https://www.svgrepo.com/show/149992/orange.svg" alt="" />
+                   <p className=" font-semibold text-white">Gromuse</p>
+                </div>
                 <div style={{ position: "relative" }}>
                   <input
                     className="rounded-3xl py-3 px-3 outline-none text-xs w-[350px] pr-10 hidden lg:block md:block"
@@ -117,7 +120,7 @@ const Navbar = ()  => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-5 h-5 text-yellow-300 hidden lg:block md:block"
+                  className="w-5 h-5 text-yellow hidden lg:block md:block"
                 >
                   <path
                     fillRule="evenodd"
@@ -127,7 +130,7 @@ const Navbar = ()  => {
                 </svg>
                 <p className="text-sm text-white hidden lg:block md:block">
                   Order now and get it within
-                  <span className="text-yellow-300"> 15 mint!</span>
+                  <span className="text-yellow"> 15 mint!</span>
                 </p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

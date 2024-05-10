@@ -13,13 +13,13 @@ return (
  <>
  <div className=' grid xl:grid-cols-1 grid-cols-1'>
   <div className='px-5'>
-    <div className='w-full bg-[#064d4f] h-[310px] rounded-xl '>
+    <div className='w-full bg-current h-[310px] rounded-xl '>
       <div className='grid xl:grid-cols-2 px-20'>
         <div className='flex justify-start items-center'>
           <div>
           <h1 className='mb-2 text-2xl font-black text-white'>We Bring the Store <br></br>to your door</h1>
           <p className='mb-2 text-white text-sm'>Food grown by respecting the cycles of nature, with no chemical pesticides or synthetic or genetically modified fertilisers, rotating crops to use up all nutrients in soil.</p>
-          <button className='text-[#064d4f] font-semibold py-2 px-8 bg-green-300 rounded-lg'>Shop now</button>
+          <button className='text-current font-semibold py-2 px-8 bg-green rounded-lg'>Shop now</button>
           </div>
         </div>
         <div className='flex justify-end mt-3'>
