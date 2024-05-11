@@ -5,9 +5,10 @@ const Navbar = ()  => {
     return (
       <>
 
-      <div className="grid xl:grid-cols-1 grid-cols-1">
-        <div className="p-5">
-          <div className="py-3 px-3 rounded-xl border w-full bg-current">
+      <div className="grid xl:grid-cols-1 grid-cols-1 mb-[100px]">
+        <div className="p-5 fixed  
+                w-full outline-none">
+          <div className="py-3 px-3 rounded-xl border w-full bg-current ">
             <div className="flex justify-between items-center">
               <div className="flex justify-items-center items-center gap-3 lg:px-10">
                 <svg

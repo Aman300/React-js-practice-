@@ -5,12 +5,24 @@ import Signup from "./pages/auth/Signup";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/home/Dashboard";
 import CategoryDetails from "./pages/home/CategoryDetails";
+import ProductDetails from "./pages/home/ProductDetails";
+import { useState } from "react";
+import PageLoading from "./components/PageLoading";
 
 export default function App() {
+
+  const [loading, setLoading] = useState(true)
+
+  setTimeout(()=>{
+    setLoading(false)
+  },1200)
+
   return (
     <>
-    
-    <BrowserRouter>
+    {
+      loading ? (<PageLoading/>) : (
+        <>
+        <BrowserRouter>
         <Routes>
           {/* <Route path='/' element={<Navbar />} /> */}
           <Route path='/signin' element={<Signin />} />
@@ -31,6 +43,7 @@ export default function App() {
           >
             <Route path="/" element={<Dashboard />} />
             <Route path="/category-details" element={<CategoryDetails />} />
+            <Route path="/product-details" element={<ProductDetails />} />
             
           </Route>
         </Route>
@@ -38,6 +51,10 @@ export default function App() {
         </Routes>
         
       </BrowserRouter>
+        </>
+      )
+    }
+    
     </>
   )
 }

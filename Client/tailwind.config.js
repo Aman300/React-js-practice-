@@ -20,7 +20,8 @@ export default {
       'yellow': '#fcc041',
       'gray': "#92979d",
       'rose': "#ab4725",
-      'lightGreen':"#bbea70"
+      'lightGreen':"#bbea70",
+      'cardGray': "#f4f6f6"
     },
     fontWeight: {
       thin: '100',
