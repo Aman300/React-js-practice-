@@ -126,7 +126,7 @@ function ProductDetails() {
 return (
  <>
    <div className='px-5 mt-2 '>
-        <div className='flex justify-between'>
+        <div className='flex justify-between px-10'>
             <h1 className='text-2xl font-bold text-current'>All category/ Beetroot (Chukandar)</h1>
             {/* <NavLink to={"/"} className="text-rose font-semibold flex justify-between gap-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
@@ -135,15 +135,40 @@ return (
             </NavLink> */}
         </div>
        
-        <div className='mt-10 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-5 gap-2'>
+        <div className='mt-3 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-5 gap-2 px-10'>
             
-            <div className='w-full h-96 rounded-xl bg-cardGray'>
-
+            <div className='w-full h-96 rounded-xl bg-white'>
+              <div to={"/product-details"} className='flex h-[400px] justify-center items-center'>
+                <img src="https://pngfre.com/wp-content/uploads/Beet-9.png" class="w-2/3 h-3/3  mb-3" alt="Beetroot "/>
+              </div>
+              <div className='grid grid-cols-4 gap-4'>
+                <div className='w-full h-[100px] rounded-xl bg-white'>
+                  <div to={"/product-details"} className='flex h-[110px] justify-center items-center'>
+                    <img src="https://pngfre.com/wp-content/uploads/Beet-11-1024x937.png" class="w-2/3 h-3/3  mb-3" alt="Beetroot "/>
+                  </div>
+                </div>
+                <div className='w-full h-[100px] rounded-xl bg-white'>
+                  <div to={"/product-details"} className='flex h-[110px] justify-center items-center'>
+                    <img src="https://pngfre.com/wp-content/uploads/Beet-25.png" class="w-2/3 h-3/3  mb-3" alt="Beetroot "/>
+                  </div>
+                </div>
+                <div className='w-full h-[100px] rounded-xl bg-white'>
+                  <div to={"/product-details"} className='flex h-[110px] justify-center items-center'>
+                    <img src="https://pngfre.com/wp-content/uploads/Beet-19.png" class="w-2/3 h-3/3  mb-3" alt="Beetroot "/>
+                  </div>
+                </div>
+                <div className='w-full h-[100px] rounded-xl bg-white'>
+                  <div to={"/product-details"} className='flex h-[110px] justify-center items-center'>
+                    <img src="https://pngfre.com/wp-content/uploads/Beet-7-768x1024.png" class="w-2/3 h-3/3  mb-3" alt="Beetroot "/>
+                  </div>
+                </div>
+              </div>
             </div>
             <div></div>
 
         </div>
     </div>
+    <br /><br /><br /><br /><br />
  </>
 )
 }
